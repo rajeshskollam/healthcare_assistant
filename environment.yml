@@ -1,0 +1,16 @@
+name: healthcare_assistant
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy>=1.24.0
+  - pip:
+    - langchain-core>=0.2.0
+    - langchain-community>=0.2.0
+    - langchain-text-splitters>=0.2.0
+    - langchain-ollama>=0.1.0
+    - faiss-cpu>=1.7.4
+    - pypdf>=3.0.0
+    - streamlit>=1.30.0

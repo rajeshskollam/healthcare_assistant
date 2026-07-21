@@ -1,0 +1,18 @@
+# Conda environment
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# FAISS index (generated at runtime)
+faiss_index/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
