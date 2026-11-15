@@ -1,7 +1,11 @@
-& "C:\Program Files\Python312\python.exe" -m pip install -r requirements.txt
+docker compose down -v
+docker compose up -d
+docker ps
 
 & "C:\Program Files\Python312\python.exe" -m venv venv
 .\venv\Scripts\Activate.ps1
+
+& "C:\Program Files\Python312\python.exe" -m pip install -r requirements.txt
 
 & "C:\Program Files\Python312\python.exe" .\ingestion-pipeline\ingestion.py
 
