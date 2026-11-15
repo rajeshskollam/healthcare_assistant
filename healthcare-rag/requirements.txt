@@ -1,0 +1,9 @@
+langchain
+langchain-core
+langchain-ollama
+langchain-text-splitters
+langgraph
+psycopg[binary]
+pgvector
+python-dotenv
+boto3

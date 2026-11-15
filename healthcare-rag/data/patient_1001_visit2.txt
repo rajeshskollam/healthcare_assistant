@@ -1,0 +1,12 @@
+Patient ID: P1001
+Visit Date: 2026-03-15
+
+Medical History:
+Previously recorded Type 2 diabetes.
+
+Medications:
+Metformin 500mg.
+
+Observations:
+Patient reported improved energy.
+Blood glucose recorded at 130 mg/dL.

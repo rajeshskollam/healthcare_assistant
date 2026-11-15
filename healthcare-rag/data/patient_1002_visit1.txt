@@ -1,0 +1,11 @@
+Patient ID: P1002
+Visit Date: 2026-02-20
+
+Medical History:
+Hypertension.
+
+Medications:
+Amlodipine 5mg.
+
+Observations:
+Blood pressure recorded at 140/90 mmHg.

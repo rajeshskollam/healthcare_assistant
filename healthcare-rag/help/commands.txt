@@ -1,0 +1,35 @@
+& "C:\Program Files\Python312\python.exe" -m pip install -r requirements.txt
+
+& "C:\Program Files\Python312\python.exe" -m venv venv
+.\venv\Scripts\Activate.ps1
+
+& "C:\Program Files\Python312\python.exe" .\ingestion-pipeline\ingestion.py
+
+& "C:\Program Files\Python312\python.exe" .\app.py
+
+Enter patient ID: P1001
+Enter your question: : Summarize previous medical history, medications and latest observations.
+
+Enter patient ID: P1002
+Enter your question: : Summarize medical history and medications.
+
+Enter patient ID: P1003
+Enter your question: : Summarize medical history and medications.
+
+deactivate
+Remove-Item -Recurse -Force .\venv
+
+SELECT
+    patient_id,
+    source,
+    LEFT(content, 100) AS document_preview
+FROM document_chunks;
+
+SELECT
+    patient_id,
+    vector_dims(embedding) AS embedding_dimension
+FROM document_chunks;
+
+TRUNCATE TABLE document_chunks, patient_documents, patients
+RESTART IDENTITY
+CASCADE;

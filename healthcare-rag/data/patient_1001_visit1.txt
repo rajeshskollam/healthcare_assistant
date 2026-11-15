@@ -1,0 +1,12 @@
+Patient ID: P1001
+Visit Date: 2026-01-10
+
+Medical History:
+Type 2 diabetes.
+
+Medications:
+Metformin 500mg.
+
+Observations:
+Patient reported fatigue.
+Blood glucose recorded at 145 mg/dL.
